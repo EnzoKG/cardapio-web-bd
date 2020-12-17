@@ -1,0 +1,25 @@
+{
+    "name": "ifms/cardapio-web",
+    "description": "atividade referente a um cardapio de produtos",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Breno de Barros",
+            "email": "breno.mongelo@estudante.ifms.edu.br"
+        },
+
+        {
+            "name": "Enzo Giovanini",
+            "email": "enzo.giovanini@estudante.ifms.edu.br"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\":"app/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "twbs/bootstrap": "v5.0.0-alpha3"
+    }
+}
