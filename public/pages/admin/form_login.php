@@ -13,23 +13,25 @@ if(isset($_SESSION['erros']))
 
 ?>
 
-<main class="container">
-
-    <section>
-        <?= $alerta ?>
-        <form action="/public/pages/admin/autenticar.php" method="POST">
-            <div>
-            <input type="text" id="inputUsuario" placeholder="Insira seu usuário" name="usuario">
-            <label for="inputUsuario">Usuario</label>
-            </div>
-            <div>
-            <input type="password" id="inputSenha" placeholder="Insira sua senha" name="senha">
-            <label for="inputSenha">Senha</label>
-            </div>
-            <button type="submit" class="btn btn-success">Entrar</button>
-        </form>
-    </section>
-    
+<main>
+    <div class="position-relative">
+        <div class="position-absolute top-50 start-50">
+            <section style="margin:2.5rem;">
+                <?= $alerta ?>
+                <form action="/public/pages/admin/autenticar.php" method="POST">
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder="Insira seu usuário" name="usuario">
+                        <label for="floatingInput">Usuário</label>
+                    </div>
+                    <div class="form-floating">
+                        <input type="password" class="form-control" id="floatingPassword" placeholder="Senha" name="senha">
+                        <label for="floatingPassword">Senha</label> 
+                    </div>
+                    <button style="margin-top:1rem;" type="submit" class="btn btn-success">Entrar</button>
+                </form>
+            </section>
+        </div>
+    </div>
 </main>
 
 

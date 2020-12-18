@@ -12,7 +12,7 @@ try {
     )";
   
     $pdo->exec($sql);
-    echo "tabela produtos criada com sucesso!";
+    #echo "tabela produtos criada com sucesso!";
 
 } catch(PDOException $e) {
   echo $e->getMessage();
@@ -27,7 +27,7 @@ try {
     )";
   
     $pdo->exec($sql);
-    echo "tabela usuarios criada com sucesso!";
+    #echo "tabela usuarios criada com sucesso!";
 
 } catch(PDOException $e) {
   echo $e->getMessage();

@@ -1,11 +1,12 @@
 <?php
 
+    require_once __DIR__ . '/../../../vendor/autoload.php';
+
     use App\Model\Cardapio;
     use App\Model\Produto;
 
     session_start();
 
-    include_once 'conexao.php'; 
     require_once __DIR__.'/../../../app/Model/Conexao.php';
 
     $nome = filter_input(INPUT_POST, 'nome', FILTER_SANITIZE_STRING);
