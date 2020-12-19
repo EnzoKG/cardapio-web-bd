@@ -1,5 +1,9 @@
 <?php
 
+namespace app\Model;
+
+use PDO;
+
 define('DB_HOST', 'mysql:host=localhost:3306;dbname=db_cardapio_web');
 define('DB_USUARIO', 'root');
 define('DB_SENHA', '');

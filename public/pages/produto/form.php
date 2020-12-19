@@ -3,7 +3,7 @@ include_once __DIR__ . '/../../includes/cabecalho.php';
 include_once __DIR__ . '/../../includes/menu_navegacao.php';
 ?>
 
-<main>
+<main style="margin-left:1rem;">
     <form action="/public/pages/produto/salvar.php" method="POST">
         <div class="row">
             <label for="inputNome">Nome</label>
